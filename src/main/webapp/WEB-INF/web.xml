@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         <servlet>
+              <servlet-name>productInsert</servlet-name>
+              <servlet-class>com.product.ProductServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+              <servlet-name>productInsert</servlet-name>
+              <url-pattern>/prodinsert</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+              <servlet-name>viewProductServlet</servlet-name>
+              <servlet-class>com.product.ViewProductServlet</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+              <servlet-name>viewProductServlet</servlet-name>
+              <url-pattern>/viewproducts</url-pattern>
+         </servlet-mapping>
+</web-app>         
