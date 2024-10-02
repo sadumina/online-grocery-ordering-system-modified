@@ -7,6 +7,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.registration.DBConnect;
+
 public class ProductDBUtil {
 	
 	private static boolean isSuccess;

@@ -24,4 +24,25 @@
               <servlet-name>viewProductServlet</servlet-name>
               <url-pattern>/viewproducts</url-pattern>
          </servlet-mapping>
+         
+          <servlet>
+              <servlet-name>registration</servlet-name>
+              <servlet-class>com.registration.registration</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+              <servlet-name>registration</servlet-name>
+              <url-pattern>/reg</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+              <servlet-name>reginsert</servlet-name>
+              <servlet-class>com.registration.reginsert</servlet-class>
+         </servlet>
+         
+         <servlet-mapping>
+              <servlet-name>reginsert</servlet-name>
+              <url-pattern>/insert</url-pattern>
+         </servlet-mapping>
+         
 </web-app>         

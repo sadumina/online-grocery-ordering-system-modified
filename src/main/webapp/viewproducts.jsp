@@ -33,6 +33,8 @@
 		</head>
 
 		<body class="product-view-page">
+		<c:forEach var="reg" items="${regdetails}">
+		
 			<header id="header" class="header d-flex align-items-center sticky-top">
 				<div class="container position-relative d-flex align-items-center justify-content-between">
 
@@ -56,6 +58,21 @@
 	               <a class="btn-icon" href="viewcart.jsp"><i class="fas fa-shopping-cart"></i></a>
 				</div>
 			</header>
+			
+			
+			<c:forEach var="reg" items="${regdetails}">
+			
+			${reg.id}
+			${reg.fname}
+			${reg.lname}
+			${reg.email}
+			${reg.phonenumber}
+			${reg.password}
+			
+			
+			</c:forEach>
+			
+			
 			<section id="products" class="products section">
 				<div class="product-container">
 					<div class="catagories"><br><br>
@@ -102,6 +119,7 @@
 				</div>
 				</div>
 			</section>
+			
 			<footer id="footer" class="footer dark-background">
 
 				<div class="container">
